@@ -1,0 +1,21 @@
+{
+    "representation_dims": "#ARGS.embedding_dims;",
+    "transform_coarse": {
+        "order": ["astec"],
+        "astec": {
+            "vocabulary_dims": "#ARGS.vocabulary_dims;",
+            "embedding_dims": "#ARGS.embedding_dims;",
+            "freeze": "#ARGS.freeze_intermediate;",
+            "dropout": 0.5
+        }
+    },
+    "transform_fine": {
+        "order": ["residual"],
+        "residual": {
+            "input_size": "#ARGS.embedding_dims;",
+            "output_size": "#ARGS.embedding_dims;",
+            "dropout": 0.5,
+            "init": "eye"
+        }
+    }
+}
