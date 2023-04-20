@@ -4,9 +4,14 @@
 
 If you find this usweful, then please cite as follows:
 
-@article{mishra2023
+@article{mishra2023,
+
 title = {Light-weight Deep Extreme Multilabel Classification},
+
 author = {Istasis Mishra, Arpan Dasgupta, Pratik Jawanpuria, Bamdev Mishra, Pawan Kumar},
+
 journal={IJCNN},
+
 year = {2023}
+
 }
